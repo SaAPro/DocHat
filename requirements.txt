@@ -5,3 +5,5 @@ bcrypt
 requests
 flask-heroku
 gunicorn
+stripe
+dialogflow
