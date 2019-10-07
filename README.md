@@ -13,24 +13,16 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/anfederico/Flaskex/master/media/flaskex-demo.png" width="100%"><p>
 
-## Features
-- Encrypted user authorizaton
-- Database initialization
-- New user signup
-- User login/logout
-- User settings
-- Modern user interface
-- Bulma framework
-- Limited custom css/js
-- Easily customizable
+## Introduction
+DocHat is an integrated medical chatbot web app. DocHat uses
+- Flaskex framework for the web design's prototype
+- Stripe for integrated payment solution
+- Dialogflow for chatbot application
 
 ## Setup
 ``` 
-git clone https://github.com/anfederico/Flaskex
-cd Flaskex
+git clone https://github.com/SaAPro/DocHat
+cd DocHat
 pip install -r requirements.txt
 python app.py
 ```
-
-## Contributing
-Please take a look at our [contributing](https://github.com/anfederico/Flaskex/blob/master/CONTRIBUTING.md) guidelines if you're interested in helping!
