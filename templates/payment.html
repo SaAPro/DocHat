@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block body %}
+{% include "navbar.html" %}
+
+<!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<section class="hero is-primary is-bold is-large">
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<p class="title is-2">Payment is needed before accesing the service 4242 4242 4242 4242</p>
+			<p class="title is-2">For testing, use card n° 4242 4242 4242 4242</p>
+			<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+			<button
+			style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+			id="checkout-button"
+			role="link"
+			>
+			Pay
+		</button>
+		<div id="error-message"></div>
+	</div>
+</section>
+
+<script>
+	// Replace with your own public key: https://dashboard.stripe.com/test/apikeys
+	var PUBLIC_KEY = "pk_test_l3ActqeVee6jOpDey22YvGdP00Ex0tZQ27";
+	// Replace with the domain you want your users to be redirected back to after payment
+	var DOMAIN = window.location.hostname;
+	// Replace with a SKU for your own product (created either in the Stripe Dashboard or with the API)
+	var SKU_ID = "sku_FwAWi0NZm00Yii";
+
+	var stripe = Stripe(PUBLIC_KEY);
+	var checkoutButton = document.getElementById("checkout-button");
+
+	// Handle any errors from Checkout
+	var handleResult = function(result) {
+		if (result.error) {
+			var displayError = document.getElementById("error-message");
+			displayError.textContent = result.error.message;
+		}
+	};
+	checkoutButton.addEventListener("click", function() {
+		// Make the call to Stripe.js to redirect to the checkout page
+		// with the current quantity
+		stripe
+			.redirectToCheckout({
+				items: [{ sku: SKU_ID, quantity: 1 }],
+				successUrl: "http://127.0.0.1:5000/payment_success",
+				cancelUrl: "http://127.0.0.1:5000/logout"
+			})
+			.then(handleResult);
+	});
+</script>
+
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/scripts.js"></script>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block body %}
+{% include "navbar.html" %}
+<section class="hero is-primary is-bold is-large">
+	<div class="hero-body">
+		<div class="content-container">
+			<div class="content-wrapper">
+				<div class="">
+					<ul id="chatbox">
+						<li class='botText'>Hi! I'm Candice your personal doctor bot. How are you feeling today?</li>
+					</ul>
+				</div>
+				<div id="userInput">
+					<input id="textInput" type="text" name="msg" placeholder="Type your query here" />
+				</div>
+			</div>
+		</div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/scripts.js"></script>
+{% endblock %}
