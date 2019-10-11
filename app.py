@@ -18,7 +18,7 @@ stripe.api_key = 'sk_test_C6iVFB1rpk66QFoAe8kUtgBu00QwYSHcuX'
 
 import dialogflow_v2 as dialogflow
 from google.oauth2 import service_account
-credentials = service_account.Credentials.from_service_account_file('newagent-bvcpok-f6b241c3b8ba.json')
+credentials = service_account.Credentials.from_service_account_file('credentials/newagent-bvcpok-2cfb831cdd63.json')
 project_id = 'newagent-bvcpok'
 session_id = random.randrange(999999999)
 language_code = 'en-US'
