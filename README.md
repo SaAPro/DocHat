@@ -33,6 +33,6 @@ Open the folowing url http://127.0.0.1:5000/ in your favorite navigator and you 
 ## How to use the web app
 - Start by signing up
 - On the payment page, copy the card number and click on pay. It will send you on the dedicated checkout Stripe servers
-- Give an email, the card n° 4242 4242 4242 4242 and arbitrary MM/YY, CVC and name
+- Give an email, the card n° 4242 4242 4242 4242 and arbitrary mm/yy, CVC and name
 - After payment, you will be redirected to the chatbot interface
 - You can start chatting with your personnal chatbot doctor !
