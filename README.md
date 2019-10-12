@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/anfederico/Flaskex/master/media/flaskex-logo.png" width="128px"><p>
+<p align="center"><img src="https://raw.githubusercontent.com/SaAPro/DocHat/master/media/flaskex-logo.png" width="128px"><p>
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -11,7 +11,7 @@
 
  <br><br>
 
- <p align="center"><img src="https://raw.githubusercontent.com/anfederico/Flaskex/master/media/flaskex-demo.png" width="100%"><p>
+ <p align="center"><img src="https://raw.githubusercontent.com/SaAPro/DocHat/master/media/flaskex-demo.png" width="100%"><p>
 
 ## Introduction
 DocHat is an integrated medical chatbot web app. DocHat uses:
@@ -39,3 +39,5 @@ Open the folowing url http://127.0.0.1:5000/ in your favorite navigator and you 
 
 ## Note
 This is an on-going work. The Dialogflow agent has been developped for the web app prototype and is not complete.
+
+<p align="center"><img src="https://raw.githubusercontent.com/SaAPro/DocHat/master/media/dochat-demo.png" width="100%"><p>
