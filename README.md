@@ -36,3 +36,6 @@ Open the folowing url http://127.0.0.1:5000/ in your favorite navigator and you 
 - Give an email, the card n° 4242 4242 4242 4242 and arbitrary mm/yy, CVC and name
 - After payment, you will be redirected to the chatbot interface
 - You can start chatting with your personnal chatbot doctor !
+
+## Note
+This is an on-going work. The Dialogflow agent has been developped for the web app prototype and is not complete.
